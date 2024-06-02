@@ -1,0 +1,84 @@
+.home-activity-section {
+  width: 85%;
+  margin: auto;
+  padding: 100px 0;
+}
+
+.Hero {
+  width: 100%;
+  padding: 200px 0;
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.Hero h1 {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.Hero p {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  margin: 20px 0;
+}
+.home-hero-form {
+  background-color: white;
+  padding: 0px 0px 0px 40px;
+  border-radius: 100px;
+}
+
+.input-1 {
+  border: none;
+}
+
+.input-1:focus-visible {
+  outline: none;
+}
+
+.hero-input {
+  padding: 20px 0;
+  font-size: 18px;
+}
+
+.home-hero-btn {
+  border-radius: 0px 100px 100px 0px;
+  font-size: 18px !important ;
+}
+
+/* Destinations */
+
+.home-destinations-content {
+  width: 85%;
+  margin: 0 auto 0 auto;
+}
+
+div.home-destinations-div {
+  width: 33%;
+  margin-top: 20px;
+}
+
+img.home-destinations-image {
+  width: 100%;
+  height: 200px;
+  border-radius: 15px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  .home-hero {
+    padding: 100px 0;
+  }
+
+  .home-hero-form {
+    border-radius: 0;
+  }
+
+  .home-hero-btn {
+    border-radius: 0;
+  }
+}

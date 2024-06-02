@@ -1,0 +1,12 @@
+.Breadcrumb {
+  padding: 15px 0;
+  background-color: #053e5e;
+  color: white;
+}
+
+.breadcrumb-page-name {
+  font-size: 30px;
+}
+
+@media (max-width: 991px) {
+}

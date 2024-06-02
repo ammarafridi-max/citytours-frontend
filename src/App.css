@@ -1,38 +1,213 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --primary-color: #04a2fc;
+  --primary-color-light: #edf8fe;
+  --primary-color-dark: #0a7bbb;
+  --grey-color: rgb(100, 100, 100);
+  --light-grey-color: rgb(240, 240, 240);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.row {
+  margin: 0 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  background-color: rgb(252, 252, 252);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+hr {
+  margin: 0;
+  padding: 0;
+  color: unset;
+  text-decoration: none;
+}
+
+p {
+  font-size: 17px;
+}
+
+/* Button Styling */
+
+button.btn-primary-outline {
+  color: #0e9ff2;
+  border: 2px solid #0e9ff2;
+  background-color: transparent;
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 10px 0;
+}
+button.btn-primary-outline:hover {
+  color: #fafafa;
+  background-color: #0e9ff2;
+}
+
+button.btn-secondary {
+  background-color: white;
+  border: none;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 10px 0;
+  color: #0e9ff2;
+}
+button.btn-secondary:hover {
+  background-color: #ebebeb;
+  color: #0e9ff2;
+}
+
+button.circle {
+  border-radius: 50px;
+}
+
+/* Font Size */
+
+.f-12 {
+  font-size: 12px;
+}
+.f-14 {
+  font-size: 14px;
+}
+.f-15 {
+  font-size: 15px;
+}
+.f-16 {
+  font-size: 16px;
+}
+.f-18 {
+  font-size: 18px;
+}
+.f-20 {
+  font-size: 20px;
+}
+.f-24 {
+  font-size: 24px;
+}
+.f-28 {
+  font-size: 28px;
+}
+.f-32 {
+  font-size: 32px;
+}
+.f-36 {
+  font-size: 36px;
+}
+.f-40 {
+  font-size: 40px;
+}
+.f-45 {
+  font-size: 45px;
+}
+
+/* Font Weight */
+
+.light {
+  font-weight: 300;
+}
+.medium {
+  font-weight: 400;
+}
+.medium-bold {
+  font-weight: 600;
+}
+.bold {
+  font-weight: 700;
+}
+.bolder {
+  font-weight: 900;
+}
+
+/* Font Color */
+
+.primary-color {
+  color: #0e9ff2;
+}
+.primary-light-color {
+  color: #edf8fe;
+}
+.black-color {
+  color: #252525;
+}
+.white-color {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Font Underline */
+
+.underline {
+  border-bottom: 15px solid #0e9ff2;
+  padding: 0 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Background Color */
+
+.bg-main {
+  background-color: #0e9ff2;
+}
+.bg-primary-light {
+  background-color: #edf8fe;
+}
+.bg-black {
+  background-color: #252525;
+}
+.bg-white {
+  background-color: white;
+}
+
+/* Width Styling */
+
+.w-25 {
+  width: 100%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+/* Margin Styling */
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+/* */
+
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
 }

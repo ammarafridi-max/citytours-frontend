@@ -1,0 +1,81 @@
+.GoogleMap{
+    width:100%;
+    height:100%;
+}
+
+.IconLink:hover{
+    color:black
+}
+
+.IconBox{
+    display:flex;
+    width:100%;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.IconBox:hover .IconBorder {
+    background-color: #0c8fdb;
+    border-color: #0c8fdb;
+    transition-duration: 0.3s;
+}
+
+.IconBox:hover .Icon{
+    color:white;
+}
+
+.Icon{
+    font-size: 25px;
+    color:white;
+    margin: 0 auto;
+    transition-duration: 0.3s;
+}
+
+.IconBorder{
+    width:50px;
+    height:50px;
+    margin-right:10px;
+    display: flex;
+    align-items: center;
+    background-color: #0e9ff2;
+    border:3px solid #0e9ff2;
+    border-radius: 100%;
+    transition-duration: 0.3s;
+}
+
+.Form{
+    margin-top: 50px;
+}
+
+.Input{
+    width:100%;
+    background-color: rgb(239, 239, 239);
+    border: none;
+    border-radius: 8px;
+    padding:10px 30px;
+    transition-duration: 0.3s;
+}
+
+.Input:hover, .Input:focus-visible {
+    background-color: rgb(230, 230, 230);
+    transition-duration: 0.3s;
+    outline: none;
+}
+
+.Textarea{
+    width:100%;
+    height: 300px;
+    max-height: 300px;
+    background-color: rgb(239, 239, 239);
+    border: none;
+    border-radius: 8px;
+    padding:20px 30px;
+    margin: 20px 0;
+    transition-duration: 0.3s;
+}
+
+.Textarea:hover, .Textarea:focus-visible {
+    background-color: rgb(230, 230, 230);
+    transition-duration: 0.3s;
+    outline: none;
+}

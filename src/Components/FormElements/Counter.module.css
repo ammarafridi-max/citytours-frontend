@@ -1,0 +1,28 @@
+.Counter {
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  width: fit-content;
+}
+
+.Number {
+  width: 50px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.Button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  font-size: 12px;
+}
+
+.Button * {
+  font-size: 17px !important;
+}
+
+.Button:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,62 @@
+.Footer {
+  padding: 50px 0;
+  background-color: rgb(240, 240, 240);
+}
+
+.Logo {
+  width: 40%;
+}
+
+.About {
+  margin: 20px 0 30px 0;
+}
+.SocialLink {
+  font-size: 25px;
+  margin-right: 20px;
+  transition-duration: 0.3s;
+}
+
+.Facebook:hover {
+  color: #1877f2;
+}
+
+.Instagram:hover {
+  color: #e1306c;
+}
+
+.LinkedIn:hover {
+  color: #0a66c2;
+}
+
+.Tiktok:hover {
+  color: #00f2ea;
+}
+
+.ColHeading {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.Link {
+  display: block;
+  margin-bottom: 10px;
+  transition-duration: 0.3s;
+  text-align: center;
+}
+
+.Link:hover {
+  color: #0e9ff2;
+}
+
+@media only screen and (max-width: 991px) {
+  .ColHeading {
+    margin-top: 30px;
+    text-align: left;
+  }
+  .Link {
+    margin-bottom: 5px;
+    text-align: left;
+  }
+}

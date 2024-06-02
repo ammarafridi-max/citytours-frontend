@@ -1,0 +1,47 @@
+.testimonialCard {
+  width: 24%;
+  padding: 20px 20px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(196, 196, 196, 1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(196, 196, 196, 1);
+  box-shadow: 0px 0px 10px 0px rgba(196, 196, 196, 1);
+  border-radius: 5px;
+}
+
+.Author {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.Img {
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  border: 3px solid transparent;
+  border-radius: 100px;
+  margin-right: 15px;
+}
+
+.Name {
+  font-weight: 700;
+  line-height: 1;
+}
+
+span .Profession {
+  font-weight: 500;
+  color: rgb(250, 250, 250);
+  font-style: 14px !important;
+}
+
+.TestimonialText {
+  line-height: 1.2;
+}
+
+@media only screen and (max-width: 991px) {
+  .testimonialCard {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

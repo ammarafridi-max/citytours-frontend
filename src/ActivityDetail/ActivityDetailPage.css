@@ -1,0 +1,51 @@
+section.activity-detail-section { overflow: hidden; padding:50px 0  }
+
+div.activity-detail-image { background-color: black; height: 550px ; width:100% ; padding: 0 ; overflow:hidden ; border-radius: 15px; }
+
+img.activity-detail-image{ width:100% ; height: 100%; object-fit: cover; }
+
+.activity-detail-main-section { width:67.5% }
+
+.activity-detail-sidebar { width:27.5% }
+
+.activity-detail-h1 { margin-bottom: 30px; }
+
+.activity-heading { border-left:5px solid #0e9ff2; padding: 5px 0 5px 20px; margin:0 0 30px 0 }
+
+.activity-detail-hr { margin:30px 0 }
+
+.activity-detail-hr-2 { margin:15px 0 }
+
+.activity-detail-sidebar { height: 100%; }
+
+.activity-detail-button-section { height:100%; border-radius: 20px; padding:30px 20px ; background-color: #edf8fe; }
+
+.activity-ticket-description-mark { color:white ; font-weight: 800; text-align: end; padding:7px; background-color: #0e9ff2; text-align: center; border-radius: 20px; }
+
+.activity-add-button, .activity-subtract-button { font-size: 20px; padding: 0 ;border: none; background-color: transparent; margin: 0 20px }
+
+.activity-detail-booking-btn { margin-bottom: 20px; }
+
+/*  */
+
+.activity-detail-contact-section { margin-top: 50px; }
+
+/* FAQS */
+
+.activity-detail-faq-question { margin-bottom: 10px; }
+
+/*  */
+
+.mobile-button-section{ display:none }
+
+@media (max-width: 991px) {
+
+    .activity-detail-main-section { width:100% ; margin: 0 auto 0 auto }
+
+    .activity-detail-sidebar { width:100% }
+
+    .activity-detail-button-section { display: none; }
+
+    .mobile-button-section { display: block; position: fixed; bottom:0px ; left:0px; background-color: white; padding:20px 10px; background-color: #0e9ff2; }
+
+}

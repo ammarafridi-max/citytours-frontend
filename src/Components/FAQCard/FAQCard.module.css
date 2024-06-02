@@ -1,0 +1,45 @@
+.FAQCard {
+  margin-bottom: 15px;
+}
+
+.QuestionBox {
+  font-size: 18px;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--light-grey-color);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.Question {
+  width: 80%;
+  color: black;
+}
+
+.Question:hover {
+  cursor: pointer;
+}
+
+.FAQIcon {
+  text-align: end;
+  width: fit-content;
+  color: black;
+  font-weight: 800;
+}
+
+.Answer {
+  padding: 0 20px;
+}
+
+.Show {
+  margin-top: 15px;
+  color: rgb(100, 100, 100);
+  height: fit-content;
+  transition-duration: 0.3s;
+}
+.Hidden {
+  height: 0;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}

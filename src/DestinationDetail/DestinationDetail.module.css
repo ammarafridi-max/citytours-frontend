@@ -1,0 +1,24 @@
+.Section {
+  padding: 50px;
+}
+
+.Heading {
+  margin-bottom: 30px;
+}
+
+.QuickFacts {
+  margin-top: 30px;
+}
+
+.QuickFacts span {
+  font-weight: 600;
+}
+
+.QuickFacts p {
+  margin-bottom: 10px;
+}
+
+.Img {
+  background-color: var(--light-grey-color);
+  border-radius: 20px;
+}

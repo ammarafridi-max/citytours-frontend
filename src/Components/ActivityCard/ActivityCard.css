@@ -1,0 +1,40 @@
+div.activity-card { overflow: hidden; width:25%; padding:0 10px !important}
+
+div.activity-card-image { width:100%; height:175px ; overflow: hidden; border-radius: 10px 10px 0 0; }
+
+img.activity-card-image { width:100% ; height:100% ; object-fit: cover ; transition-duration: 1s; }
+
+img.activity-card-image:hover { transform: scale(1.05); transition-duration: 1s; }
+
+div.activity-card-content { padding:30px 10px }
+
+a.activity-link { text-decoration: none; }
+
+h3.activity-name { color:black; font-size: 20px; text-transform: capitalize; margin-bottom: 5px ; text-decoration: none; transition-duration: 0.3s; }
+
+h3.activity-name:hover { color:#0E9FF2; transition-duration: 0.3s; }
+
+span.activity-card-category { margin: 0 5px ; }
+
+span.activity-review-numbers { color:gray }
+
+hr.activity-card-divider { margin:10px 0 }
+
+div.activity-pricing { color:gray ; width:50% ; font-size: 15px; }
+
+span.activity-price { font-weight: 700; color:black ; margin-left: 5px; }
+
+div.activity-duration { width:50% ; color: gray; font-size: 14px; }
+
+span.activity-hours { margin-left: 5px; }
+
+button.activity-card-button { border-radius: 10px; padding:10px 0 }
+
+
+@media (max-width: 991px) {
+
+    div.activity-card { width:100% ; margin-top: 20px; }
+
+    div.activity-card-image { height:250px }
+
+}
