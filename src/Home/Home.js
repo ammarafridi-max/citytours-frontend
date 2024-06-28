@@ -17,8 +17,8 @@ export default function Home() {
     <>
       <DocumentMeta {...meta} />
       <Hero />
-      <HomeDestinations />
       <HomeTours />
+      <HomeDestinations />
       <HomeBlogs />
       <HomeTestimonials />
     </>

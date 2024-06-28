@@ -3,15 +3,18 @@
 }
 
 .Title {
-  margin-bottom: 30px;
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: capitalize;
 }
 
 .ImgDiv {
   width: 100%;
   aspect-ratio: 16 / 8;
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: 10px;
   overflow: hidden;
+  margin: 40px 0;
 }
 
 .Img {
@@ -19,4 +22,61 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+br {
+  line-height: 2;
+}
+
+.RelatedBlogsText {
+  margin-bottom: 20px;
+}
+
+.Dates {
+  width: fit-content;
+  height: fit-content;
+  padding: 0;
+  text-align: end;
+}
+
+.Dates p {
+  color: rgb(70, 70, 70);
+  font-size: 15px;
+}
+
+/* Blog Text */
+
+.BlogText p,
+.BlogText li {
+  font-size: 18px;
+}
+
+/* Author */
+
+.AuthorCard {
+  width: fit-content;
+  padding: 0;
+  height: fit-content;
+}
+
+.AuthorImgDiv {
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  border-radius: 100px;
+  margin-right: 15px;
+}
+
+.AuthorName {
+  width: fit-content;
+  padding: 0;
+}
+
+.AuthorAndDateSection {
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin: 20px 0;
+  padding: 15px 0;
 }

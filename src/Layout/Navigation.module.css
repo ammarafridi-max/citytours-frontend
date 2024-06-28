@@ -5,13 +5,13 @@
 }
 
 .Navigation {
-  padding: 20px 0;
+  padding: 15px 0;
   display: flex;
   justify-content: space-between;
 }
 
 .NavLogoBox {
-  width: 15%;
+  width: 12.5%;
 }
 
 .NavLogo {
@@ -19,7 +19,6 @@
 }
 
 .NavLinksBox {
-  width: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,10 +26,10 @@
 
 .NavLink {
   text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 13.5px;
+  font-weight: 500;
   padding: 10px 10px;
-  margin: 0 15px;
+  margin: 0 7px;
   transition-duration: 0.2s;
   border-bottom: 4px solid transparent;
 }

@@ -11,13 +11,14 @@ export default function Container({
 }) {
   return (
     <div
-      className={`col-lg-11 col-10 mx-auto ${className}`}
+      className={`mx-auto ${className}`}
       style={{
         paddingTop: pt || py,
         paddingBottom: pb || py,
         marginTop: mt || my,
         marginBottom: mb || my,
         backgroundColor: bgColor,
+        width: "85%",
       }}
     >
       {children}

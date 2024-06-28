@@ -11,7 +11,10 @@ export default function TestimonialCard({ name, profession, children }) {
         </div>
       </div>
       <p className={styles.TestimonialText}>
-        Some text. Lorem ipsum dolor sit amet.
+        City Tours is my ultimate one-stop shop for all my traveling needs. My
+        job requires me to be constantly traveling and so, I need to book
+        services often. With City Tours, I don't worry about getting visas,
+        booking flights, hotels, and arranging transfers
       </p>
     </div>
   );

@@ -2,9 +2,8 @@ export default function PageHeading(props) {
   return (
     <h1
       style={{
-        fontSize: "40",
+        fontSize: "34px",
         textTransform: "capitalize",
-        fontWeight: "bold",
         textAlign: `${props.textAlign}`,
         paddingTop: `${props.pt}`,
         paddingBottom: `${props.pb}`,

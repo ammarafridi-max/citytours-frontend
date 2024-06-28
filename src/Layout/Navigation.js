@@ -30,18 +30,18 @@ function Logo() {
 function LinksBox() {
   return (
     <div className={styles.NavLinksBox}>
-      <NavLink to="/about" className={`${styles.NavLink}`}>
-        About
-      </NavLink>
       <NavLink to="/tours" className={styles.NavLink}>
         Tours
       </NavLink>
       <Link to="/destinations" className={styles.NavLink}>
         Destinations
       </Link>
-      <Link to="#" className={styles.NavLink}>
-        Visa
+      <Link to="/blog" className={styles.NavLink}>
+        Blog
       </Link>
+      <NavLink to="/about" className={`${styles.NavLink}`}>
+        About
+      </NavLink>
       <Link to="/contact" className={styles.NavLink}>
         Contact
       </Link>

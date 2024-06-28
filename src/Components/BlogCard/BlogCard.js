@@ -1,9 +1,9 @@
 import { useState } from "react";
-import styles from "./BlogCard.module.css";
 import img from "./travel.png";
+import styles from "./BlogCard.module.css";
 import { Link } from "react-router-dom";
 
-function BlogCard({ heading, description, pill }) {
+function BlogCard({ heading, description, tag, date, url }) {
   const blog = {
     title: "How to build your dream holiday package?",
     description:
@@ -14,17 +14,22 @@ function BlogCard({ heading, description, pill }) {
 
   return (
     <div className={styles.blogCardDiv}>
-      <Link to="/blog/detail">
+      <Link to={`/blog/${url}`}>
         <div className={styles.blogCardImgDiv}>
           <img src={img} className={styles.blogCardImg} />
         </div>
         <div className={styles.blogCardContent}>
-          <div className={styles.blogCardDate}>March 13, 2023</div>
+          <div className={styles.blogCardDate}>March 20, 2024</div>
           <div className={styles.blogCardPill}>Travel</div>
-          <h4 className={styles.blogCardHeading}>{blog.title}</h4>
+          <h4 className={styles.blogCardHeading}>
+            How to book your holiday with City Tours?
+          </h4>
           <div className={styles.blogCardDescriptionDiv}>
-            <p className={styles.blogCardDescription}>
-              {blog.description.substring(0, 80)}...
+            <p
+              className={styles.blogCardDescription}
+              dangerouslySetInnerHTML={{ __html: description }}
+            >
+              {/* {description.slice(0, 75)}... */}
             </p>
           </div>
           {/* <img className={styles.blogAuthorImage} />

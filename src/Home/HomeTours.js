@@ -10,10 +10,20 @@ function HomeTours() {
         <SectionHeading textAlign="center" mb="50px">
           Best-selling tours
         </SectionHeading>
-        <TourCard />
-        <TourCard />
-        <TourCard />
-        <TourCard />
+        <div className="row p-0">
+          <div className="col-12 col-lg-3 p-0">
+            <TourCard />
+          </div>
+          <div className="col-12 col-lg-3 p-0">
+            <TourCard />
+          </div>
+          <div className="col-12 col-lg-3 p-0">
+            <TourCard />
+          </div>
+          <div className="col-12 col-lg-3 p-0">
+            <TourCard />
+          </div>
+        </div>
       </Container>
     </Section>
   );

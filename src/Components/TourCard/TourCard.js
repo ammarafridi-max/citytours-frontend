@@ -7,51 +7,56 @@ import { Link } from "react-router-dom";
 import { IoTime } from "react-icons/io5";
 import { IoMdPin } from "react-icons/io";
 
-function TourCard() {
+function TourCard({ url, image, name, duration, location, price }) {
   return (
     <div className={styles.CardExterior}>
-      <a href="/tours/abc">
+      <a href={`tours/${url}`}>
         <div className={styles.Card}>
-          <Image />
-          <Detail />
+          <Image image={image} />
+          <Detail
+            name={name}
+            duration={duration}
+            location={location}
+            price={price}
+          />
         </div>
       </a>
     </div>
   );
 }
 
-function Image(props) {
+function Image({ image }) {
   return (
     <div className={styles.ImageDiv}>
-      <img src={img} className={styles.Image} />
-      <div className={styles.featuredTextDiv}>
+      <img src={image} className={styles.Image} />
+      {/* <div className={styles.featuredTextDiv}>
         <p className={styles.featuredText}>10% OFF</p>
-      </div>
+      </div> */}
     </div>
   );
 }
 
-function Detail(props) {
+function Detail({ name, duration, location, price }) {
   return (
     <div className={styles.TourDetail}>
       {/* <h6 className={styles.Subtitle}>National Day Holiday</h6> */}
-      <h3 className={styles.Title}>Fabulous Azerbaijan</h3>
+      <h3 className={styles.Title}>{name}</h3>
 
       <p className={styles.IconDiv}>
         <IoTime className={styles.Icon} />
-        <span className={styles.Duration}>3 nights / 4 days</span>
+        <span className={styles.Duration}>{duration}</span>
       </p>
 
       <p className={styles.IconDiv}>
         <IoMdPin className={styles.Icon} />
-        <span className={styles.Duration}>Zurich, Switzerland</span>
+        <span className={styles.Duration}>{location}</span>
       </p>
 
       <hr className="my-3" />
 
       <div className="row">
         <div className="col-12 m-auto light f-14" style={{ color: "grey" }}>
-          from <br /> <span className={styles.Price}>AED 1,999</span>
+          from <br /> <span className={styles.Price}>AED {price}</span>
         </div>
       </div>
     </div>

@@ -4,14 +4,31 @@
 }
 
 .Title {
-  font-size: 24px;
+  font-size: 20px;
   border-bottom: 2px solid rgb(225, 225, 225);
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   padding-bottom: 10px;
 }
 
-.FilterBox {
-  margin-bottom: 40px;
+.FilterBox p {
+  margin-bottom: 20px;
   border-left: 3px solid var(--primary-color);
   padding-left: 10px;
+  font-weight: 500;
+}
+
+.FilterBox h6 {
+  font-size: 16px;
+  border-radius: 3px;
+  padding: 10px 15px;
+  background-color: rgb(235, 235, 235);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.FilterTitleIcon {
+  text-align: end;
+  font-size: 16px;
 }

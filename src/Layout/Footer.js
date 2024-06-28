@@ -3,6 +3,8 @@ import styles from "./Footer.module.css";
 import Container from "../Components/Container/Container";
 import { Link } from "react-router-dom";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTiktok } from "react-icons/fa";
+import { MdArrowUpward } from "react-icons/md";
+import { useState } from "react";
 
 export default function Footer() {
   return (
@@ -32,6 +34,7 @@ export default function Footer() {
           <p className={styles.ColHeading}>Contact Us</p>
         </div>
       </Container>
+      <ScrollUpBtn />
     </footer>
   );
 }
@@ -61,6 +64,20 @@ function Column1() {
           <FaTiktok className={`${styles.SocialLink} ${styles.Tiktok}`} />
         </Link>
       </div>
+    </div>
+  );
+}
+
+function ScrollUpBtn() {
+  const [className, setClassName] = useState(styles.Hidden);
+
+  if (window.screenTop === "1500px") {
+    console.log(window);
+  }
+
+  return (
+    <div className={`${styles.UpIcon} ${className}`}>
+      <MdArrowUpward />
     </div>
   );
 }

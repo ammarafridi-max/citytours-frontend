@@ -11,10 +11,20 @@ function HomeBlogs() {
         <SectionHeading textAlign="center" mb="75px">
           Recent Blogs
         </SectionHeading>
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
+        <div className="row">
+          {/* <div className="col-12 col-lg-3 p-0">
+            <BlogCard />
+          </div>
+          <div className="col-12 col-lg-3 p-0">
+            <BlogCard />
+          </div>
+          <div className="col-12 col-lg-3 p-0">
+            <BlogCard />
+          </div>
+          <div className="col-12 col-lg-3 p-0">
+            <BlogCard />
+          </div> */}
+        </div>
       </Container>
     </Section>
   );

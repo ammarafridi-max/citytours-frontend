@@ -36,7 +36,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/detail" element={<BlogDetail />} />
+        <Route path="/blog/:url" element={<BlogDetail />} />
         <Route path="/test" element={<Test />} />
 
         {/* Destinations */}
@@ -47,8 +47,8 @@ function App() {
         />
 
         {/* Tours */}
-        <Route path="/tours" element={<Tours />} />
-        <Route path="/tours/:url" element={<TourDetail />} />
+        <Route path="tours" element={<Tours />} />
+        <Route path="tours/:url" element={<TourDetail />} />
       </Routes>
       <Footer />
     </BrowserRouter>

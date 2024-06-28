@@ -4,6 +4,7 @@ import Container from "../Components/Container/Container";
 import Breadcrumb from "../Components/Breadcrumb/Breadcrumb";
 import PageHeading from "../Components/Headings/PageHeading";
 import SectionHeading from "../Components/Headings/SectionHeading";
+import TourCard from "../Components/TourCard/TourCard";
 
 export default function DestinationDetail() {
   return (
@@ -49,6 +50,24 @@ export default function DestinationDetail() {
           <div className={`col-12 col-lg-5 ${styles.Img}`}></div>
         </Container>
       </Section>
+      <Tours />
     </>
+  );
+}
+
+function Tours() {
+  return (
+    <Section>
+      <Container>
+        <SectionHeading textAlign="center" className={styles.Heading}>
+          Tours
+        </SectionHeading>
+        <div className="row">
+          <div className="col-lg-3 p-0">
+            <TourCard />
+          </div>
+        </div>
+      </Container>
+    </Section>
   );
 }

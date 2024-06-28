@@ -5,6 +5,7 @@
   --primary-color-light: #edf8fe;
   --primary-color-dark: #0a7bbb;
   --grey-color: rgb(100, 100, 100);
+  --medium-grey-color: rgb(150, 150, 150);
   --light-grey-color: rgb(240, 240, 240);
 }
 
@@ -19,7 +20,7 @@
 }
 
 body {
-  background-color: rgb(252, 252, 252);
+  background-color: rgb(253, 253, 253);
 }
 
 h1,
