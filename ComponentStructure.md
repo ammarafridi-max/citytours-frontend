@@ -3,25 +3,25 @@ Component Structure
 /src
 
 |-- /Components
-|   |-- Strip
-|   |-- Buttons
-|   |-- Headings
-|   |-- Breadcrumbs
+| |-- Strip
+| |-- Buttons
+| |-- Headings
+| |-- Breadcrumbs
 
 |-- /Admin
-|   |-- /AdminNavigation
-|   |-- /AdminDashboard
-|   |-- /AdminTours
-|   |-- /AdminStaff
-|   |-- /AdminBlogs
-|   |-- /AdminOrders
-|   |-- /AdminComponents
+| |-- /AdminNavigation
+| |-- /AdminDashboard
+| |-- /AdminTours
+| |-- /AdminStaff
+| |-- /AdminBlogs
+| |-- /AdminOrders
+| |-- /AdminComponents
 
 |-- /Customer
-|   |-- /HomePage
-|   |-- /AboutPage
-|   |-- /ContactPage
-|   |-- /BlogPage
-|   |-- /BlogDetailPage
-|   |-- /TourPage
-|   |-- /TourDetailPage
+| |-- /HomePage
+| |-- /AboutPage
+| |-- /ContactPage
+| |-- /BlogPage
+| |-- /BlogDetailPage
+| |-- /TourPage
+| |-- /TourDetailPage

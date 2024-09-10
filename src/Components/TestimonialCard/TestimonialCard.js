@@ -1,21 +1,26 @@
 import styles from "./TestimonialCard.module.css";
+import img from "./david.png";
 
-export default function TestimonialCard({ name, profession, children }) {
+export default function TestimonialCard({ title, name, src, children, type }) {
   return (
-    <div className={styles.testimonialCard}>
-      <div className={styles.Author}>
-        <img className={styles.Img} />
-        <div className="align-items-center my-auto">
-          <p className={styles.Name}>John Doe</p>
-          <span className={styles.Profession}>Traveler</span>
-        </div>
+    <div
+      className={`${styles.testimonialCard} ${
+        type === "secondary" && styles.secondary
+      }`}
+    >
+      <div className={styles.ImageContainer}>
+        <img
+          src={src}
+          alt={`Testimonial by ${name} about My Dummy Ticket`}
+          title={`Testimonial by ${name} about My Dummy Ticket`}
+        />
       </div>
-      <p className={styles.TestimonialText}>
-        City Tours is my ultimate one-stop shop for all my traveling needs. My
-        job requires me to be constantly traveling and so, I need to book
-        services often. With City Tours, I don't worry about getting visas,
-        booking flights, hotels, and arranging transfers
-      </p>
+      <div className={styles.Content}>
+        <p>{children}</p>
+      </div>
+      <p className={styles.Author}>{name}</p>
     </div>
   );
 }
+
+// alt={`Testimonial about City Tours UAE by ${name}`}

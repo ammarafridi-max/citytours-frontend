@@ -1,30 +1,35 @@
 import styles from "./FAQCard.module.css";
 import { useState } from "react";
-import AddIcon from "@mui/icons-material/Add";
-import RemoveIcon from "@mui/icons-material/Remove";
+import { Add } from "@mui/icons-material";
+import { Remove } from "@mui/icons-material";
 
-export default function FAQCard() {
-  const [answerClass, setAnswerClass] = useState(styles.Hidden);
+export default function FAQCard({ question, children }) {
+  const [className, setClassName] = useState(styles.Hidden);
 
   function toggleHidden() {
-    if (answerClass === styles.Hidden) {
-      setAnswerClass(styles.Show);
-    } else {
-      setAnswerClass(styles.Hidden);
-    }
+    setClassName((prev) =>
+      prev === styles.Hidden ? styles.Show : styles.Hidden
+    );
   }
 
   return (
     <div className={styles.FAQCard}>
-      <div className={styles.QuestionBox} onClick={toggleHidden}>
-        <p className={styles.Question}>What is a tour?</p>
-        {answerClass == styles.Hidden ? (
-          <AddIcon className={styles.FAQIcon} />
+      <div
+        className={`${styles.QuestionBox} ${
+          className === styles.Show && styles.Active
+        }`}
+        onClick={toggleHidden}
+      >
+        <h3 className={styles.Question}>{question}</h3>
+        {className === styles.Hidden ? (
+          <Add className={styles.FAQIcon} />
         ) : (
-          <RemoveIcon className={styles.FAQIcon} />
+          <Remove className={styles.FAQIcon} />
         )}
       </div>
-      <p className={`${styles.Answer} ${answerClass}`}>This is an answer.</p>
+      {children && (
+        <p className={`${className} ${styles.Answer}`}>{children}</p>
+      )}
     </div>
   );
 }

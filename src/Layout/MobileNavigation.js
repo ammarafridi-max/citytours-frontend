@@ -1,30 +1,31 @@
-import Container from "../Components/Container/Container";
-import Section from "../Components/Section/Section";
+import Container from "../components/Container/Container";
 import styles from "./MobileNavigation.module.css";
 import logo from "./logo.png";
-import { IoIosMenu } from "react-icons/io";
 import { useState } from "react";
 import { IoClose } from "react-icons/io5";
-import { Link } from "react-router-dom";
+import { LuMenu } from "react-icons/lu";
+
+export const menuLinks = [
+  { name: "Tours", url: "/tours" },
+  { name: "Blog", url: "/blog" },
+  { name: "About", url: "/about" },
+  { name: "Contact", url: "/contact" },
+];
 
 export default function MobileNavigation() {
   const [menuClass, setMenuClass] = useState(styles.Hidden);
 
   return (
     <nav className={styles.Navbar}>
-      <Container
-        className={`row justify-content-between align-items-center p-0 m-0`}
-      >
-        <div className="col-5 p-0">
+      <Container>
+        <div className="row align-items-center">
           <img src={logo} className={styles.Logo} />
-        </div>
-        <div
-          className="col-3 text-end p-0"
-          onClick={() => {
-            setMenuClass(styles.Show);
-          }}
-        >
-          <IoIosMenu className={styles.Icon} />
+          <span
+            className={styles.IconSpan}
+            onClick={() => setMenuClass(styles.Show)}
+          >
+            <LuMenu className={styles.Icon} />
+          </span>
         </div>
       </Container>
       <Modal
@@ -45,18 +46,11 @@ function Modal(props) {
           <IoClose className={styles.CloseIcon} />
         </div>
         <div className={styles.NavLinks}>
-          <Link href="/" className={styles.NavLink}>
-            About
-          </Link>
-          <Link href="/" className={styles.NavLink}>
-            Tours
-          </Link>
-          <Link href="/" className={styles.NavLink}>
-            Visa
-          </Link>
-          <a href="/" className={styles.NavLink}>
-            Contact
-          </a>
+          {menuLinks.map((link) => (
+            <a href={link.url} className={styles.NavLink}>
+              {link.name}
+            </a>
+          ))}
         </div>
       </div>
     </div>

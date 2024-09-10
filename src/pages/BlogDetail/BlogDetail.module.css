@@ -1,0 +1,100 @@
+.Section {
+  padding: 30px 0 50px 0;
+}
+
+.Title {
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.ImgDiv {
+  width: 100%;
+  aspect-ratio: 16 / 8;
+  overflow: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 40px 0;
+}
+
+.Img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+br {
+  line-height: 2;
+}
+
+.RelatedBlogsText {
+  margin-bottom: 20px;
+}
+
+.Dates {
+  width: fit-content;
+  height: fit-content;
+  padding: 0;
+  text-align: end;
+}
+
+.Dates p {
+  color: rgb(70, 70, 70);
+  font-size: 15px;
+}
+
+/* Blog Text */
+
+.BlogText p,
+.BlogText li {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 300;
+}
+
+.BlogText strong,
+.BlogText strong {
+  font-weight: 600;
+}
+
+.BlogText h2 {
+  font-size: 26px;
+  margin: 30px 0;
+  font-weight: 600;
+}
+
+.BlogText h3 {
+  font-size: 23px;
+  margin: 30px 0;
+  font-weight: 400;
+}
+
+/* Author */
+
+.AuthorCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(240, 240, 240);
+  padding: 20px 30px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.authorData {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.AuthorImgDiv {
+  background-color: black;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+}
+
+.dates * {
+  font-size: 15px;
+}

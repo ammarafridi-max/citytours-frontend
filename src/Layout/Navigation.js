@@ -1,8 +1,8 @@
 import logo from "./logo.png";
 import styles from "./Navigation.module.css";
-import PrimaryButton from "../Components/Buttons/PrimaryButton";
-import Container from "../Components/Container/Container";
-import { Link, NavLink } from "react-router-dom";
+import PrimaryButton from "../components/Buttons/PrimaryButton";
+import Container from "../components/Container/Container";
+import { menuLinks } from "./MobileNavigation";
 
 export default function Navigation() {
   return (
@@ -21,30 +21,20 @@ export default function Navigation() {
 function Logo() {
   return (
     <div className={styles.NavLogoBox}>
-      <Link to="/">
+      <a href="/">
         <img src={logo} className={styles.NavLogo} />
-      </Link>
+      </a>
     </div>
   );
 }
 function LinksBox() {
   return (
     <div className={styles.NavLinksBox}>
-      <NavLink to="/tours" className={styles.NavLink}>
-        Tours
-      </NavLink>
-      <Link to="/destinations" className={styles.NavLink}>
-        Destinations
-      </Link>
-      <Link to="/blog" className={styles.NavLink}>
-        Blog
-      </Link>
-      <NavLink to="/about" className={`${styles.NavLink}`}>
-        About
-      </NavLink>
-      <Link to="/contact" className={styles.NavLink}>
-        Contact
-      </Link>
+      {menuLinks.map((link) => (
+        <a href={link.url} className={styles.NavLink}>
+          {link.name}
+        </a>
+      ))}
     </div>
   );
 }
