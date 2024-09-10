@@ -1,7 +1,6 @@
 import logo from "./logo.png";
 import styles from "./Footer.module.css";
-import Container from "../Components/Container/Container";
-import { Link } from "react-router-dom";
+import Container from "../components/Container/Container";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTiktok } from "react-icons/fa";
 
 export default function Footer() {
@@ -11,25 +10,35 @@ export default function Footer() {
         <Column1 />
         <div className="col-6 col-lg">
           <p className={styles.ColHeading}>Quick Links</p>
-          <Link className={styles.Link} to="/">
+          <a className={styles.Link} href="/">
             Home
-          </Link>
-          <Link className={styles.Link}>About</Link>
-          <Link className={styles.Link}>Tours</Link>
-          <Link className={styles.Link}>Destinations</Link>
-          <Link className={styles.Link} to="/blog">
+          </a>
+          <a className={styles.Link} href="about">
+            About
+          </a>
+          <a className={styles.Link} href="tours">
+            Tours
+          </a>
+          <a className={styles.Link} href="destinations">
+            Destinations
+          </a>
+          <a className={styles.Link} href="blog">
             Blog
-          </Link>
+          </a>
         </div>
         <div className="col-6 col-lg">
           <p className={styles.ColHeading}>Legal</p>
-          <Link className={styles.Link}>Terms & Conditions</Link>
-          <Link className={styles.Link}>Privacy Policy</Link>
-          <Link className={styles.Link}>Company Verification</Link>
-          <Link className={styles.Link}>Contact</Link>
+          <a className={styles.Link} href="terms-and-conditions">
+            Terms & Conditions
+          </a>
+          <a className={styles.Link}>Privacy Policy</a>
+          <a className={styles.Link}>Company Verification</a>
+          <a className={styles.Link}>Contact</a>
         </div>
         <div className="col-12 col-lg">
-          <p className={styles.ColHeading}>Contact Us</p>
+          <p className={styles.ColHeading} href="contact">
+            Contact Us
+          </p>
         </div>
       </Container>
     </footer>
@@ -45,21 +54,24 @@ function Column1() {
         that helps travelers plan and book their vacations.
       </p>
       <div className={styles.SocialLinks}>
-        <Link>
+        <a href="https://www.facebook.com/citytours.ae" target="_blank">
           <FaFacebook className={`${styles.SocialLink} ${styles.Facebook}`} />
-        </Link>
+        </a>
 
-        <Link>
+        <a href="https://www.instagram.com/citytours.ae/" target="_blank">
           <FaInstagram className={`${styles.SocialLink} ${styles.Instagram}`} />
-        </Link>
+        </a>
 
-        <Link>
+        <a
+          href="https://www.linkedin.com/company/city-tours-uae/"
+          target="_blank"
+        >
           <FaLinkedin className={`${styles.SocialLink} ${styles.LinkedIn}`} />
-        </Link>
+        </a>
 
-        <Link>
+        <a href="https://www.tiktok.com/@citytours.ae" target="_blank">
           <FaTiktok className={`${styles.SocialLink} ${styles.Tiktok}`} />
-        </Link>
+        </a>
       </div>
     </div>
   );

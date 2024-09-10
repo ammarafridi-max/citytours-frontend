@@ -1,12 +1,22 @@
 .Breadcrumb {
-  padding: 15px 0;
-  background-color: #053e5e;
-  color: white;
+  padding: 30px 0 !important;
+  background-color: #053e5e !important;
+  color: white !important;
 }
 
-.breadcrumb-page-name {
-  font-size: 30px;
+.heading {
+  margin-bottom: 2px;
+  font-size: 40px;
 }
 
-@media (max-width: 991px) {
+.link a {
+  font-weight: 300 !important;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 991px) {
+  .Breadcrumb {
+    padding: 10px 0;
+    font-size: 14px;
+  }
 }

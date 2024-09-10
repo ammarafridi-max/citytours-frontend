@@ -1,3 +1,5 @@
+import styles from "./Container.module.css";
+
 export default function Container({
   className,
   children,
@@ -11,7 +13,7 @@ export default function Container({
 }) {
   return (
     <div
-      className={`col-lg-11 col-10 mx-auto ${className}`}
+      className={`${styles.Container} ${className}`}
       style={{
         paddingTop: pt || py,
         paddingBottom: pb || py,

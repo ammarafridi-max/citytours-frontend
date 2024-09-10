@@ -1,17 +1,30 @@
 import styles from "./Counter.module.css";
-import { useState } from "react";
 import { Remove, Add } from "@mui/icons-material";
 
-export default function Counter({ children, onAdd, onSubtract }) {
+function Counter({ count, setCount }) {
+  const handleAdd = () => {
+    if (count < 9) {
+      setCount((prevCount) => prevCount + 1);
+    }
+  };
+
+  const handleSubtract = () => {
+    if (count > 1) {
+      setCount((prevCount) => prevCount - 1);
+    }
+  };
+
   return (
     <div className={styles.Counter}>
-      <span type="none" className={styles.Button} onClick={onSubtract}>
+      <button type="button" className={styles.Button} onClick={handleSubtract}>
         <Remove />
-      </span>
-      <p className={styles.Number}>{children}</p>
-      <span type="none" className={styles.Button} onClick={onAdd}>
+      </button>
+      <p className={styles.Number}>{count}</p>
+      <button type="button" className={styles.Button} onClick={handleAdd}>
         <Add />
-      </span>
+      </button>
     </div>
   );
 }
+
+export default Counter;

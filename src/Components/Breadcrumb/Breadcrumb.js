@@ -8,22 +8,26 @@ function Breadcrumb({ pageName, subPageName }) {
   return (
     <Section className={styles.Breadcrumb}>
       <Container>
-        {/* <h1 className="breadcrumb-page-name regular">{pageName}</h1> */}
-        <span>
+        <h1 className={styles.heading}>{pageName}</h1>
+
+        <span className={styles.link}>
           <Link to="/" style={{ textDecoration: "none", color: "white" }}>
             Home
           </Link>
         </span>
+
         <span className="mx-2">
           <KeyboardArrowRightIcon />
         </span>
-        <span>{pageName}</span>
+
+        <span className={styles.link}>{pageName}</span>
+
         {subPageName && (
           <>
             <span className="mx-2">
               <KeyboardArrowRightIcon />
             </span>
-            <span>{subPageName}</span>
+            <span className={styles.link}>{subPageName}</span>
           </>
         )}
       </Container>

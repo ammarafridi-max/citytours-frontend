@@ -3,6 +3,8 @@
   color: #0e9ff2;
   text-transform: uppercase;
   font-weight: 700;
+  width: 100%;
+  display: block;
 }
 
 .Required {

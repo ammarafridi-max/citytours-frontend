@@ -1,18 +1,19 @@
-function Section(props) {
+import { useState, useEffect } from "react";
+
+export default function Section(props) {
+  const sectionStyle = {
+    paddingTop: props.pt || props.py || "100px",
+    paddingBottom: props.pb || props.py || "100px",
+    marginTop: props.mt || props.my,
+    marginBottom: props.mb || props.my,
+    backgroundColor:
+      props.type === "secondary" ? "white" : "rgb(247, 247, 247)",
+    color: props.backgroundColor === "primary" ? "white" : "black",
+  };
+
   return (
-    <section
-      className={`container-fluid mx-auto px-0 ${props.className}`}
-      style={{
-        paddingTop: props.pt || props.py,
-        paddingBottom: props.pb || props.py,
-        marginTop: props.mt || props.my,
-        marginBottom: props.mb || props.my,
-        backgroundColor: `${props.bgColor}`,
-      }}
-    >
+    <section style={sectionStyle} className={props.className} id={props.id}>
       {props.children}
     </section>
   );
 }
-
-export default Section;

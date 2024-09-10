@@ -1,11 +1,10 @@
+import styles from "./Headings.module.css";
+
 function SectionHeading(props) {
   return (
     <h2
-      className={props.className}
+      className={`${styles.SectionHeading} ${props.className} `}
       style={{
-        fontSize: "40px",
-        fontWeight: "700",
-        textTransform: "capitalize",
         textAlign: `${props.textAlign}`,
         paddingTop: `${props.pt}`,
         paddingBottom: `${props.pb}`,

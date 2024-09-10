@@ -2,26 +2,26 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // Layout Components
-import Navigation from "./Layout/Navigation";
-import Footer from "./Layout/Footer";
+import Navigation from "./layout/Navigation";
+import Footer from "./layout/Footer";
 
 // Main Pages
-import Home from "./Home/Home";
-import Contact from "./Contact/Contact";
-import SignUp from "./SignUp/SignUp";
-import About from "./About/About";
-import Blog from "./Blog/Blog";
-import BlogDetail from "./BlogDetail/BlogDetail";
-import Test from "./Test";
+import Home from "./pages/Home/Home";
+import Contact from "./pages/Contact/Contact";
+import SignUp from "./pages/SignUp/SignUp";
+import About from "./pages/About/About";
+import Blog from "./pages/Blog/Blog";
+import BlogDetail from "./pages/BlogDetail/BlogDetail";
+import TermsAndConditions from "./pages/Legal/T&C/T&C";
 
 // Destinations
-import Destinations from "./Destinations/Destinations";
-import DestinationDetail from "./DestinationDetail/DestinationDetail";
+import Destinations from "./pages/Destinations/Destinations";
+import DestinationDetail from "./pages/DestinationDetail/DestinationDetail";
 
 // Tour Pages
-import Tours from "./Tours/Tours";
-import TourDetail from "./TourDetail/TourDetail";
-import MobileNavigation from "./Layout/MobileNavigation";
+import Tours from "./pages/Tours/Tours";
+import TourDetail from "./pages/TourDetail/TourDetail";
+import MobileNavigation from "./layout/MobileNavigation";
 
 function App() {
   return (
@@ -36,8 +36,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/detail" element={<BlogDetail />} />
-        <Route path="/test" element={<Test />} />
+        <Route path="/blog/:url" element={<BlogDetail />} />
+        <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
 
         {/* Destinations */}
         <Route path="/destinations" element={<Destinations />} />
@@ -47,8 +47,8 @@ function App() {
         />
 
         {/* Tours */}
-        <Route path="/tours" element={<Tours />} />
-        <Route path="/tours/:url" element={<TourDetail />} />
+        <Route path="tours" element={<Tours />} />
+        <Route path="tours/:url" element={<TourDetail />} />
       </Routes>
       <Footer />
     </BrowserRouter>

@@ -1,10 +1,13 @@
+/* App.css */
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
 :root {
   --primary-color: #04a2fc;
-  --primary-color-light: #edf8fe;
+  --primary-color-light: #c8e9fc;
   --primary-color-dark: #0a7bbb;
+  --secondary-color: #f2610e;
   --grey-color: rgb(100, 100, 100);
+  --medium-grey-color: rgb(150, 150, 150);
   --light-grey-color: rgb(240, 240, 240);
 }
 
@@ -19,7 +22,7 @@
 }
 
 body {
-  background-color: rgb(252, 252, 252);
+  background-color: rgb(253, 253, 253);
 }
 
 h1,
@@ -37,8 +40,30 @@ hr {
   text-decoration: none;
 }
 
-p {
-  font-size: 17px;
+p,
+a,
+input,
+label,
+ul,
+ol {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.semi-bold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
 }
 
 /* Button Styling */
@@ -205,9 +230,23 @@ button.circle {
   margin-bottom: 50px;
 }
 
-/* */
+/* Transitions */
 
-.card-title {
-  font-size: 20px;
-  font-weight: 600;
+.fadeEnter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+.fadeEnterActive {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 500ms, transform 500ms;
+}
+.fadeExit {
+  opacity: 1;
+  transform: translateY(0);
+}
+.fadeExitActive {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 500ms, transform 500ms;
 }
